@@ -9,6 +9,7 @@ using qgb48.Authorization.Users;
 using qgb48.Configuration;
 using qgb48.Localization;
 using qgb48.MultiTenancy;
+using qgb48.TestOrders;
 using qgb48.Tests;
 using qgb48.Timing;
 
@@ -46,6 +47,7 @@ namespace qgb48
         {
             IocManager.Resolve<AppTimes>().StartupTime = Clock.Now;
             IocManager.Register<Test>(DependencyLifeStyle.Transient);
+            IocManager.Register<TestOrder>(DependencyLifeStyle.Transient);
         }
     }
 }

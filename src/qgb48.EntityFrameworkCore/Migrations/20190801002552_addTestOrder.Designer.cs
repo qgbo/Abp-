@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using qgb48.EntityFrameworkCore;
 
 namespace qgb48.Migrations
 {
     [DbContext(typeof(qgb48DbContext))]
-    partial class qgb48DbContextModelSnapshot : ModelSnapshot
+    [Migration("20190801002552_addTestOrder")]
+    partial class addTestOrder
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

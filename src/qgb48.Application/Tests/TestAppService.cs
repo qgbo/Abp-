@@ -1,5 +1,6 @@
 ﻿using Abp.Application.Services;
 using Abp.Dependency;
+using qgb48.Tests.Dto.TestDto;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,7 +18,7 @@ namespace qgb48.Tests
 
 
 
-        public void Create()
+        public void Create(TestDto testDto)
         {
 
             //Resolving and using in a safe way

@@ -5,6 +5,7 @@ using qgb48.Authorization.Users;
 using qgb48.MultiTenancy;
 using qgb48.Orders;
 using qgb48.Tests;
+using qgb48.TestOrders;
 
 namespace qgb48.EntityFrameworkCore
 {
@@ -17,6 +18,8 @@ namespace qgb48.EntityFrameworkCore
         public DbSet<OrderItem> OrderItems { get; set; }
 
         public DbSet<Test> Tests { get; set; }
+        public DbSet<TestOrder> TestOrders { get; set; }
+        
         public qgb48DbContext(DbContextOptions<qgb48DbContext> options)
             : base(options)
         {
